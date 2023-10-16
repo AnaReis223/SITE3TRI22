@@ -1,3 +1,4 @@
+alert("Ok")
 const form = document.querySelector("form")
 const resp = document.querySelector("h3")
 
@@ -7,6 +8,7 @@ form.addEventListener("submit", (e) => {
     const permitida = Number(form.inPerm.value)
     const condutor = Number(form.inCond.value)
     let leve = permitida + (permitida * 0.2)
+    alert(permitida + condutor + leve)
     
     if(condutor <= permitida) {
         resp.innerText = `Situação Sem Multa`
